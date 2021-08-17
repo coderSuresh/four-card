@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
+main {
+    min-height: 90vh;
+    width: 100%;
+    margin: 5vh auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+header {
+    max-width: 500px;
+    margin: auto 5%;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.soft {
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+.hard {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.desc {
+    font-size: 0.873rem;
+    color: hsl(229, 6%, 66%);
+    margin-top: 20px;
+
+}
+
+.grid-container {
+    text-align: left;
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.supervisor, .verti-grid, .calculator {
+    width: 30%;
+}
+
+.verti-grid .g {
+    margin: 20px auto;
+    width: 100%;
+}
+
+.g {
+    position: relative;
+    padding: 20px 40px 20px 20px;
+    margin: 20px;
+    height: 200px;
+    box-shadow: 0 10px 20px hsla(234, 84%, 38%, 0.1);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 7px;    
+    border-top: 4px solid green;
+}
+
+.supervisor {
+    border-color: hsl(180, 62%, 55%);
+}
+
+.team-builder {
+    border-color: hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-color: hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-color: hsl(212, 86%, 64%);
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.card-desc {
+    margin-top: 10px;
+    font-size: 0.7rem;
+}
+
+.card-icon {
+    position: absolute;
+    right: 50px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1160px) {
+    .card-icon {
+        width: 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    .grid-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .grid-container {
+        flex-direction: column;
+    }
+
+    .supervisor, .verti-grid, .calculator {
+        width: 50%;
+    }
+}
+
+@media (max-width: 510px) {
+
+    .supervisor, .verti-grid, .calculator {
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 300px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+}
